@@ -83,14 +83,16 @@ console.log(age);
 const ticketPrice = 0.21;
 let normalPrice = km * ticketPrice;
 console.log(normalPrice);
-
+let discount = "Biglietto Standard";
 
 if (age < 18) {
     normalPrice = (normalPrice - normalPrice * 20 / 100);
     console.log(normalPrice);
+    discount = "Biglietto Young";
 } else if (age >= 65) {
     normalPrice = (normalPrice - normalPrice * 40 / 100);
     console.log(normalPrice)
+    discount = "Biglietto Senior";
 }
 
 const fullPrice = normalPrice.toFixed(2);
@@ -102,9 +104,12 @@ console.log(fullPrice);
 const result = document.getElementById('printTicket');
 result.textContent = `Il prezzo del biglietto è € ${fullPrice}`;
 
+const classes = Math.floor(Math.random() * 10 ) + 1;
+
+
 //Risultato in tabella
 document.getElementById("passengerName").textContent = userName;
-document.getElementById("passengerName").textContent = userName;
-document.getElementById("passengerName").textContent = userName;
+document.getElementById("discount").textContent = discount;
+document.getElementById("wagon").textContent = classes;
 document.getElementById("passengerName").textContent = userName;
 document.getElementById("passengerName").textContent = userName;
