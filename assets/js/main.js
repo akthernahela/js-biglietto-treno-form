@@ -72,11 +72,19 @@ form.addEventListener('submit', (event) => {
 
 //Dati utente 
 const userName = document.getElementById('inputName');
+console.log(userName);
+
 const km = document.getElementById('inputKm');
+console.log(km);
+
 const age = document.getElementById('inputAge');
+console.log(age);
+
 
 const ticketPrice = 0.21;
 let normalPrice = km * ticketPrice;
+console.log(normalPrice);
+
 
 if (age < 18) {
     normalPrice = (normalPrice - normalPrice * 20 / 100);
@@ -85,7 +93,10 @@ if (age < 18) {
 }
 
 const fullPrice = normalPrice.toFixed(2);
+console.log(fullPrice);
+
 
 //Risultato
 
 const result = document.getElementById('printTicket');
+result.textContent = `Il prezzo del biglietto è € ${fullPrice}`;
