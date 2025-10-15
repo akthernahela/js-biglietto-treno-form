@@ -67,18 +67,13 @@ Questo richiederà un minimo di ricerca.
 const form = document.getElementById('trainForm');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    console.log(event);
+    console.log("Form Load!");
 })
 
 //Dati utente 
 const userName = document.getElementById('inputName');
-console.log(userName);
-
-const km = document.getElementById('inputKm');
-console.log(km);
-
-const age = document.getElementById('inputAge');
-console.log(age);
+const km = parseFloat(document.getElementById('inputKm').value);
+const age = parseInt(document.getElementById('inputAge').value);
 
 const ticketPrice = 0.21;
 let normalPrice = km * ticketPrice;
