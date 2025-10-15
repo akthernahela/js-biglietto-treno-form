@@ -80,7 +80,6 @@ console.log(km);
 const age = document.getElementById('inputAge');
 console.log(age);
 
-
 const ticketPrice = 0.21;
 let normalPrice = km * ticketPrice;
 console.log(normalPrice);
@@ -88,8 +87,10 @@ console.log(normalPrice);
 
 if (age < 18) {
     normalPrice = (normalPrice - normalPrice * 20 / 100);
+    console.log(normalPrice);
 } else if (age >= 65) {
     normalPrice = (normalPrice - normalPrice * 40 / 100);
+    console.log(normalPrice)
 }
 
 const fullPrice = normalPrice.toFixed(2);
@@ -100,3 +101,10 @@ console.log(fullPrice);
 
 const result = document.getElementById('printTicket');
 result.textContent = `Il prezzo del biglietto è € ${fullPrice}`;
+
+//Risultato in tabella
+document.getElementById("passengerName").textContent = userName;
+document.getElementById("passengerName").textContent = userName;
+document.getElementById("passengerName").textContent = userName;
+document.getElementById("passengerName").textContent = userName;
+document.getElementById("passengerName").textContent = userName;
