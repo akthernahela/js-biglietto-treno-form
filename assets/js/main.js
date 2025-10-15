@@ -65,4 +65,7 @@ Questo richiederà un minimo di ricerca.
 */
 
 const form = document.getElementById('trainForm');
-
+form.addEventListener('submit', (event) =>{
+    event.preventDefault();
+    console.log(event);
+})
