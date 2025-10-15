@@ -44,4 +44,5 @@ const km = Numero(prompt('Quanti km vuole percorrere ?'));
 const age = Numero(prompt('Quanti anni ha ?'));
 
 //Calcolo il prezzo base
-const normalPrice = km * 0.21;
+const ticketPrice = 0.21;
+const normalPrice = km * ticketPrice;
