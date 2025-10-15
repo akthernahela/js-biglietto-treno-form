@@ -30,16 +30,16 @@ La risposta finale (o output) sarà anch’essa da scrivere in console.
 //Stesso ragionamento dell'esercizio precedente 
 
 //Chiedo i dati all'utente 
-const km = Numero(prompt('Quanti km vuole percorrere ?'));
-const age = Numero(prompt('Quanti anni ha ?'));
+//const km = Numero(prompt('Quanti km vuole percorrere ?'));
+//const age = Numero(prompt('Quanti anni ha ?'));
 
 //Calcolo il prezzo base
-const ticketPrice = 0.21;
-let normalPrice = km * ticketPrice;
+//const ticketPrice = 0.21;
+//let normalPrice = km * ticketPrice;
 //Occhio che con const non si può cambiare valore
 
 //Calcolo il prezzo con gli sconti
-if (age < 18){
+/*if (age < 18){
     normalPrice = (normalPrice - normalPrice * 20 / 100);
 } else if (age >= 65){
     normalPrice = (normalPrice - normalPrice * 40 / 100);
@@ -50,7 +50,7 @@ const fullPrice = normalPrice.toFixed(2);
 //Logging
 console.log(normalPrice);
 console.log(fullPrice);
-
+*/
 
 /*
 MILESTONE 2:
@@ -69,3 +69,8 @@ form.addEventListener('submit', (event) =>{
     event.preventDefault();
     console.log(event);
 })
+
+//Dati utente 
+const userName = document.getElementById('inputName');
+const km = document.getElementById('inputKm');
+const age = document.getElementById('inputAge');
