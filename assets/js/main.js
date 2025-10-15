@@ -55,5 +55,11 @@ if (age < 18){
     normalPrice = (normalPrice - normalPrice * 40 / 100);
 }
 
+const fullPrice = normalPrice.toFixed(2);
+
+//Logging
+console.log(normalPrice);
+console.log(fullPrice);
+
 
 
