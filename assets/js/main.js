@@ -45,4 +45,15 @@ const age = Numero(prompt('Quanti anni ha ?'));
 
 //Calcolo il prezzo base
 const ticketPrice = 0.21;
-const normalPrice = km * ticketPrice;
+let normalPrice = km * ticketPrice;
+//Occhio che con const non si può cambiare valore
+
+//Calcolo il prezzo con gli sconti
+if (age < 18){
+    normalPrice = (normalPrice - normalPrice * 20 / 100);
+} else if (age >= 65){
+    normalPrice = (normalPrice - normalPrice * 40 / 100);
+}
+
+
+
