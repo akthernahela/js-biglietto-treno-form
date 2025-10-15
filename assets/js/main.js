@@ -35,3 +35,12 @@ possiamo andare a dedicarci allo stile,
 raffinando la parte di HTML e CSS in modo da renderla esteticamente gradevole.
 
 */
+
+
+//Stesso ragionamento dell'esercizio precedente 
+
+//Chiedo i dati all'utente 
+const km = Numero(prompt('Quanti km vuole percorrere ?'));
+const age = Numero(prompt('Quanti anni ha ?'));
+
+//Calcolo il prezzo base
