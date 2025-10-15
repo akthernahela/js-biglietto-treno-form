@@ -65,7 +65,7 @@ Questo richiederà un minimo di ricerca.
 */
 
 const form = document.getElementById('trainForm');
-form.addEventListener('submit', (event) =>{
+form.addEventListener('submit', (event) => {
     event.preventDefault();
     console.log(event);
 })
@@ -74,3 +74,18 @@ form.addEventListener('submit', (event) =>{
 const userName = document.getElementById('inputName');
 const km = document.getElementById('inputKm');
 const age = document.getElementById('inputAge');
+
+const ticketPrice = 0.21;
+let normalPrice = km * ticketPrice;
+
+if (age < 18) {
+    normalPrice = (normalPrice - normalPrice * 20 / 100);
+} else if (age >= 65) {
+    normalPrice = (normalPrice - normalPrice * 40 / 100);
+}
+
+const fullPrice = normalPrice.toFixed(2);
+
+//Risultato
+
+const result = document.getElementById('printTicket');
