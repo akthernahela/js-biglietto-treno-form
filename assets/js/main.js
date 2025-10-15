@@ -77,8 +77,9 @@ const age = parseInt(document.getElementById('inputAge').value);
 
 const ticketPrice = 0.21;
 let normalPrice = km * ticketPrice;
-console.log(normalPrice);
 let discount = "Biglietto Standard";
+console.log(`Prezzo base: ${normalPrice.toFixed(2)}€`);
+console.log(`Età: ${age}`);
 
 if (age < 18) {
     normalPrice = (normalPrice - normalPrice * 20 / 100);
@@ -90,7 +91,6 @@ if (age < 18) {
     discount = "Biglietto Senior";
 }
 
-const fullPrice = normalPrice.toFixed(2);
 console.log(fullPrice);
 
 
