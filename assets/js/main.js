@@ -83,15 +83,13 @@ console.log(`Età: ${age}`);
 
 if (age < 18) {
     normalPrice = (normalPrice - normalPrice * 20 / 100);
-    console.log(normalPrice);
     discount = "Biglietto Young";
 } else if (age >= 65) {
     normalPrice = (normalPrice - normalPrice * 40 / 100);
-    console.log(normalPrice)
     discount = "Biglietto Senior";
 }
-
-console.log(fullPrice);
+const fullPrice = normalPrice.toFixed(2);
+console.log(`Prezzo finale: ${fullPrice}€`);
 
 
 //Risultato
