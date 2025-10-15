@@ -94,9 +94,6 @@ console.log(`Prezzo finale: ${fullPrice}€`);
 
 //Risultato
 
-const result = document.getElementById('printTicket');
-result.textContent = `Il prezzo del biglietto è € ${fullPrice}`;
-
 const classes = Math.floor(Math.random() * 10 ) + 1;
 const codeCP = Math.floor(Math.random() * 9000) + 1000;
 
