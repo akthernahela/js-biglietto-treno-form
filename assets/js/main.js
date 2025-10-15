@@ -105,11 +105,12 @@ const result = document.getElementById('printTicket');
 result.textContent = `Il prezzo del biglietto è € ${fullPrice}`;
 
 const classes = Math.floor(Math.random() * 10 ) + 1;
+const codeCP = Math.floor(Math.random() * 10000) + 1000;
 
 
 //Risultato in tabella
 document.getElementById("passengerName").textContent = userName;
 document.getElementById("discount").textContent = discount;
 document.getElementById("wagon").textContent = classes;
-document.getElementById("passengerName").textContent = userName;
-document.getElementById("passengerName").textContent = userName;
+document.getElementById("code").textContent = codeCP;
+document.getElementById("priceOfTicket").textContent = fullPrice;
