@@ -68,10 +68,10 @@ const form = document.getElementById('trainForm');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     console.log("Form Load!");
-})
+
 
 //Dati utente 
-const userName = document.getElementById('inputName');
+const userName = document.getElementById('inputName').value;
 const km = parseFloat(document.getElementById('inputKm').value);
 const age = parseInt(document.getElementById('inputAge').value);
 
@@ -98,7 +98,7 @@ const result = document.getElementById('printTicket');
 result.textContent = `Il prezzo del biglietto è € ${fullPrice}`;
 
 const classes = Math.floor(Math.random() * 10 ) + 1;
-const codeCP = Math.floor(Math.random() * 10000) + 1000;
+const codeCP = Math.floor(Math.random() * 9000) + 1000;
 
 
 //Risultato in tabella
@@ -106,4 +106,6 @@ document.getElementById("passengerName").textContent = userName;
 document.getElementById("discount").textContent = discount;
 document.getElementById("wagon").textContent = classes;
 document.getElementById("code").textContent = codeCP;
-document.getElementById("priceOfTicket").textContent = fullPrice;
+document.getElementById("priceOfTicket").textContent = `${fullPrice} €`;
+
+});
